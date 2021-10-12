@@ -1,0 +1,36 @@
+.header {
+  padding: 40px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logoWrapper {
+    // flex: 1 1 auto;
+  }
+
+  &__logo {
+    padding: 9px 0;
+    font-size: 1.4em;
+    cursor: pointer;
+
+    span {
+      color: $main;
+    }
+  }
+
+  &__menuWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__button {
+    padding: 7px 20px !important;
+  }
+}

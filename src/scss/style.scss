@@ -1,3 +1,30 @@
 @import 'reset';
 @import 'vars';
 @import 'global';
+@import 'components';
+
+.menu {
+  margin-right: 30px;
+
+  &__item {
+    margin-right: 15px;
+    padding: 9px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color $duration ease-in-out, color $duration ease-in-out;
+
+    &:hover {
+      color: $white;
+      background-color: lighten($text, 8%);
+    }
+
+    &:active {
+      border-radius: 5px;
+      transform: translateY(1px);
+    }
+  }
+
+  .active {
+    font-weight: 600;
+  }
+}

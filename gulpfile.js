@@ -75,7 +75,7 @@ function imageMin() {
 }
 
 function scripts() {
-  return src(['node_modules/jquery/dist/jquery.js', config.srcJS])
+  return src([config.srcJS])
     .pipe(concat('main.min.js'))
     .pipe(gulpif(prodMode, gulpTerser({}, terser.minify)))
     .pipe(dest('public/js'))
@@ -126,4 +126,4 @@ exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, styles, scripts, imageMin, layout, build);
 // тут мы указываем имена функция, которые хотим выполнить при дефолтной команде gulp
 // то есть мы хотим обрабатывать styles и browsersync и watching обновременно
-exports.default = parallel(styles, scripts, openDevServer, watching);
+exports.default = parallel(scripts, openDevServer, watching);

@@ -1,8 +1,9 @@
 {
-  "name": "Gulp-practice",
-  "version": "1.0.0",
-  "description": "assembly gulp",
+  "name": "CKASATKA",
+  "version": "0.0.1",
+  "description": "",
   "main": "index.hml",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp --dev",
@@ -19,8 +20,16 @@
     "gulp-imagemin": "7.1.0",
     "gulp-sass": "^5.0.0",
     "gulp-terser": "^2.1.0",
-    "jquery": "^3.6.0",
+    "prettier": "^2.4.1",
     "sass": "^1.42.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.21.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
     "webp-converter": "^2.2.3"
   },
   "dependencies": {

@@ -1,0 +1,42 @@
+.tagline {
+  position: relative;
+  display: flex;
+  // align-items: center;
+  height: calc(100vh - 117px);
+  max-height: 1080px;
+
+  &::before {
+    position: absolute;
+    top: -117px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    max-width: 1920px;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    background: url('../img/content/particles.jpg') center center no-repeat;
+    background-size: cover;
+    content: '';
+  }
+
+  &__wrapper {
+    position: relative;
+    // display - height tagline__wrapper / 2 - height header
+    top: calc(((100vh - 242px) / 2) - 117px);
+    max-width: 65%;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__button {
+  }
+}

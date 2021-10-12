@@ -1,0 +1,34 @@
+.button {
+  padding: 10px 27px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all $duration ease-in-out;
+
+  &--outline {
+    background-color: $white;
+    border: 1px solid $main;
+
+    &:hover {
+      span {
+        color: $white;
+      }
+    }
+  }
+
+  &--fill {
+    background-color: $main;
+
+    span {
+      color: $white;
+    }
+  }
+
+  &:hover {
+    background-color: $main;
+  }
+
+  &:active {
+    background-color: darken($main, 12%);
+    transform: translateY(1px);
+  }
+}
