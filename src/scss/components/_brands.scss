@@ -1,0 +1,26 @@
+.brands {
+  padding-top: 120px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+
+  &__items {
+    display: grid;
+    flex: 1 1 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    row-gap: 50px;
+  }
+
+  &__item {
+  }
+
+  &__image {
+  }
+}

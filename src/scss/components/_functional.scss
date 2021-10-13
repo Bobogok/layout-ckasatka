@@ -1,0 +1,62 @@
+.functional {
+  padding-top: 120px;
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    flex: 1 1 100%;
+  }
+
+  &__textWrapper {
+  }
+
+  &__text {
+    margin-bottom: 10px;
+  }
+
+  &__cases {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  &__case {
+  }
+
+  &__caseTitle {
+    font-weight: 500;
+    font-size: 40px;
+
+    &--red {
+      color: $main;
+    }
+  }
+
+  &__caseText {
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: space-between;
+    margin-top: 50px;
+    row-gap: 50px;
+  }
+
+  &__card {
+    height: 350px;
+  }
+
+  &__cardIcon {
+    @include patch-icon;
+  }
+
+  &__cardTitle {
+    margin-top: 60px;
+  }
+
+  &__cardText {
+  }
+}

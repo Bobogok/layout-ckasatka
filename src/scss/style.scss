@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'vars';
 @import 'global';
+@import 'mixins';
 @import 'components';
 
 .menu {
@@ -26,5 +27,26 @@
 
   .active {
     font-weight: 600;
+  }
+}
+
+.title {
+  font-size: 35px;
+}
+
+.bullets {
+  display: flex;
+
+  &__bullet {
+    width: 9px;
+    height: 9px;
+    margin-right: 9px;
+    background-color: $white;
+    border: 1px solid $main;
+    border-radius: 50%;
+  }
+
+  .active {
+    background-color: $main;
   }
 }
