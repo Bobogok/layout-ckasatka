@@ -9,6 +9,8 @@
     border: 1px solid $main;
 
     &:hover {
+      background-color: $main;
+
       span {
         color: $white;
       }
@@ -21,14 +23,27 @@
     span {
       color: $white;
     }
+
+    &:hover {
+      background-color: darken($main, 5%);
+    }
   }
 
-  &:hover {
-    background-color: $main;
+  &--still {
+    background-color: $white;
+
+    &:hover {
+      background-color: darken($white, 10%);
+    }
+  }
+
+  &--shadow {
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
   }
 
   &:active {
-    background-color: darken($main, 12%);
+    // background-color: darken($main, 12%);
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     transform: translateY(1px);
   }
 }

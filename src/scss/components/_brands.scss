@@ -2,19 +2,22 @@
   padding-top: 120px;
 
   &__inner {
-    display: flex;
+    // display: flex;
   }
 
   &__title {
-    display: flex;
-    align-items: center;
+    margin-bottom: 60px;
+    // display: flex;
+    // align-items: center;
+    text-align: center;
   }
 
   &__items {
     display: grid;
-    flex: 1 1 100%;
+    // flex: 1 1 100%;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: end;
+    // justify-items: end;
+    justify-items: center;
     row-gap: 50px;
   }
 
